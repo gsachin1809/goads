@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/profile/customer', function () {
+    return view('customer.index');
+});
 Route::get('/login', function () {
     return view('login');
 });

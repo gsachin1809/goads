@@ -87,7 +87,8 @@
                     <form class="form-signin">
                     <input type="text" class="form-control" placeholder="Email" required autofocus>
                     <input type="password" class="form-control" placeholder="Password" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    
+                    <button class="btn btn-lg btn-primary btn-block" onclick="window.location='/profile/customer'">
                         Sign in</button>
                     <label class="checkbox pull-left">
                         <input type="checkbox" value="remember-me">
@@ -96,7 +97,9 @@
                     <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
                     </form>
                 </div>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create New Account</button>
+                
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Signup</button>
+                
 
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
