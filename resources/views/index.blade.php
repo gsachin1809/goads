@@ -17,7 +17,7 @@
 		  	</div>
 		  	
 			<div class="pull-right">
-				Home | Contact Us | FAQ | Traffic | <button class="btn btn-success">Login </button> 
+				Home | Contact Us | FAQ | Traffic |<a href="/login"> <button class="btn btn-success" href="/login">Login </button> </a>
 			</div>
 		</div> 	
 		
