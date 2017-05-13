@@ -20,6 +20,11 @@ Route::get('/profile/createads', function () {
     return view('customer.createads');
 });
 
+Route::get('/profile/createads/Registeration', function () {
+    return view('customer.registration');
+});
+
+
 Route::get('/profile/myads', function () {
     return view('customer.myads');
 });
