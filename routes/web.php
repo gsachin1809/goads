@@ -11,6 +11,11 @@
 |
 */
 
+// Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/customer/hello','CustomerController@index');
+
+
 
 Route::get('/customer/chat', function () {
     return view('customer.chat');
@@ -51,4 +56,3 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
