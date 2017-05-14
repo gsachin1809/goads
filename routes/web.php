@@ -12,42 +12,43 @@
 */
 
 
-Route::get('/profile/chat', function () {
+Route::get('/customer/chat', function () {
     return view('customer.chat');
 });
 
-Route::get('/profile/createads', function () {
+Route::get('/customer/createads', function () {
     return view('customer.createads');
 });
 
-Route::get('/profile/createads/Registeration', function () {
+Route::get('/customer/createads/Registeration', function () {
     return view('customer.registration');
 });
 
 
-Route::get('/profile/myads', function () {
+Route::get('/customer/myads', function () {
     return view('customer.myads');
 });
 
-Route::get('/profile/wallet', function () {
+Route::get('/customer/wallet', function () {
     return view('customer.wallet');
 });
 
 
-Route::get('/profile/myprofile', function () {
+Route::get('/customer/myprofile', function () {
     return view('customer.myprofile');
 });
 
 
-Route::get('/profile/customer', function () {
+Route::get('/customer/index', function () {
     return view('customer.index');
 });
 
 
-Route::get('/login', function () {
-    return view('login');
-});
 
 Route::get('/', function () {
     return view('index');
 });
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

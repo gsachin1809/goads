@@ -1,7 +1,7 @@
-@extends('customer._layout')
-@section('customerpages')
+@extends('layouts.app')
 
-@if(0)
+@section('content')
+@if(1)
 	<div class="container">
 	    <h1 class="well">Registration Form</h1>
 			<div class="col-lg-12 well">
@@ -87,7 +87,7 @@
 						</p>
 					</div>		
 					
-					<button type="button" class="btn btn-lg btn-info">I agreeed</button>					
+					<button type="button" class="btn btn-lg btn-info"  onclick="window.location='/profile/customer'">I agreeed</button>					
 					</div>
 				</form> 
 			</div>
@@ -216,7 +216,7 @@
 							</p>
 						</div>		
 					
-					<button type="button" class="btn btn-lg btn-info">I agreeed</button>					
+					<button type="button" class="btn btn-lg btn-info"  onclick="window.location='/profile/customer'">I agreeed</button>					
 					</div>
 				</form> 
 				</div>

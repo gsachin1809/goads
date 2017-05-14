@@ -1,6 +1,7 @@
-@extends('customer._layout')
-@section('customerpages')
-	
+@extends('layouts.app')
+
+@section('content')	
+<div class="container">
 	<div class="col-sm-12">
 		<table class="table">
 		    <tbody>
@@ -68,4 +69,5 @@
 		    </tbody>
   		</table>
 	</div>
+</div>
 @stop

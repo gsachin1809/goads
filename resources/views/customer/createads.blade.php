@@ -1,6 +1,7 @@
-@extends('customer._layout')
-@section('customerpages')
-	
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
 	<div class="form-group">
 		<div >
 	    	<h2><label for="email">Type Of Ads</label>
@@ -20,4 +21,5 @@
 	    <button class="btn btn-success" onclick="window.location='createads/Registeration'"> Next</button>
 	    </div>
   	</div>
+</div>
 @stop
