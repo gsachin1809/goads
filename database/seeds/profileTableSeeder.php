@@ -12,10 +12,12 @@ class profileTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('users')->insert([
-            'name' => 'sachin ',
+        DB::table('profile')->insert([
+            'first_name' => 'sachin ',
+            'last_name' => 'gupta ',
+
             'email' => 'gsachin1809@gmail.com',
-            'password' => bcrypt('1234567'),
-        ]);
+            
+        ]); 
     }
 }

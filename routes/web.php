@@ -14,12 +14,15 @@
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/customer/hello','CustomerController@index');
+Route::get('/customer/myprofile/update','CustomerController@update');
+Route::post('/customer/myprofile/update','CustomerController@store');
 
 
 
 Route::get('/customer/chat', function () {
     return view('customer.chat');
 });
+
 
 Route::get('/customer/createads', function () {
     return view('customer.createads');

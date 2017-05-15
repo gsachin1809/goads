@@ -19,6 +19,7 @@ class CreateProfileTable extends Migration
             $table->string('middle_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('Contact_number')->nullable();
+            $table->string('email')->unique();
             $table->string('place_of_busniess')->nullable();
             $table->text('address')->nullable();
             $table->enum('gender',['male','female'])->default('male');
@@ -27,6 +28,8 @@ class CreateProfileTable extends Migration
             $table->string('pan_number')->nullable();
             $table->string('type_of_occupation')->nullable();
             $table->timestamps();
+            $table->timestamps('deleted_at');
+
         });
     }
 

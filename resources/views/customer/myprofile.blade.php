@@ -28,7 +28,8 @@
 					      	</tr>
 					      	<tr>
 						      	<td>
-						      		<button class="btn btn-success">Edit </button>
+						      		<button type="button" class="btn btn-info btn-lg" onclick="window.location='/customer/myprofile/update'">Update Details</button>
+
 					      		</td>
 				      		</tr>
 

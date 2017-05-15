@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
+use App\Models\Profile;
 
 
 class CustomerController extends Controller
@@ -13,10 +14,11 @@ class CustomerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    // $useremail =  Auth::user()->email;
     public function index()
     {
         //
-        $useremail =  Auth::user()->email;
+        
 
         
 
@@ -40,7 +42,7 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo $request['first_name'];
     }
 
     /**
@@ -72,9 +74,22 @@ class CustomerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update()
     {
-        //
+        if((Auth::user()) != null){
+            $useremail =  Auth::user()->email;
+            $profile = Profile::where('email',$useremail)->first();
+            if(count($profile))
+            {
+                // echo $profile;
+                // die;
+                return view('customer.updateprofile')->with('profile', $profile);
+            }
+            return view('customer.updateprofile');
+        }
+
+
+
     }
 
     /**
