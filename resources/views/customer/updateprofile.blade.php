@@ -12,54 +12,54 @@
 						<div class="row">
 							<div class="col-sm-4 form-group">
 								<label>First Name</label>
-								<input type="text" placeholder="Enter First Name Here.." class="form-control" value="{{ $profile->first_name }}">
+								<input type="text" placeholder="Enter First Name Here.." class="form-control" value="{{ $profile->first_name }}" name="first_name">
 							</div>
 							<div class="col-sm-4 form-group">
 								<label>Middle Name</label>
-								<input type="text" placeholder="Enter Middle Name Here.." class="form-control" value="{{ $profile->middle_name }}">
+								<input type="text" placeholder="Enter Middle Name Here.." class="form-control" value="{{ $profile->middle_name }}" name="middle_name">
 							</div>
 							<div class="col-sm-4 form-group">
 								<label>Last Name</label>
-								<input type="text" placeholder="Enter Last Name Here.." class="form-control" value="{{ $profile->last_name }}">
+								<input type="text" placeholder="Enter Last Name Here.." class="form-control" value="{{ $profile->last_name }}" name="last_name">
 							</div>
 						</div>					
 						<div class="col-sm-12 form-group">
 							<label>Address</label>
-							<textarea placeholder="Enter Address Here.." rows="3" class="form-control" value="{{ $profile->address }}"></textarea>
+							<textarea placeholder="Enter Address Here.." rows="3" class="form-control" value="{{ $profile->address }}" name="address"></textarea>
 						</div>	
 						
 						<div class="row">
 							<div class="col-sm-4 form-group">
 								<label>Gender</label>
-								<input type="text" placeholder="Enter City Name Here.." class="form-control">
+								<input type="text" placeholder="Enter City Name Here.." class="form-control" name="gender">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Marital Status</label>
-								<input type="text" placeholder="Enter State Name Here.." class="form-control">
+								<input type="text" placeholder="Enter State Name Here.." class="form-control" name="marital_status">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Citizenship</label>
-								<input type="text" placeholder="Enter Zip Code Here.." class="form-control" value="{{ $profile->citizenship }}">
+								<input type="text" placeholder="Enter Zip Code Here.." class="form-control" value="{{ $profile->citizenship }}" name="citizenship">
 							</div>		
 						</div>
 						<div class="row">
 							<div class="col-sm-4 form-group">
 								<label>PAN number</label>
-								<input type="text" placeholder="Enter City Name Here.." class="form-control" value="{{ $profile->pan_number }}">
+								<input type="text" placeholder="Enter City Name Here.." class="form-control" value="{{ $profile->pan_number }}" name="pan_number">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Occuption Type</label>
-								<input type="text" placeholder="Enter State Name Here.." class="form-control" value="{{ $profile->type_of_occuption }}">
+								<input type="text" placeholder="Enter State Name Here.." class="form-control" value="{{ $profile->type_of_occuption }}" name="occuption">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Contact Number</label>
-								<input type="text" placeholder="Enter Zip Code Here.." class="form-control">
+								<input type="text" placeholder="Enter Zip Code Here.." class="form-control" name="contact_number">
 							</div>		
 						</div>
 						<div class="row">
 							<div class="col-sm-12 form-group">
 								<label>Email</label>
-								<input type="text" placeholder="Enter Designation Here.." class="form-control" value="{{ $profile->email }}">
+								<input type="text" placeholder="Enter Designation Here.." class="form-control" value="{{ $profile->email }}" name="email">
 							</div>		
 							
 						</div>						

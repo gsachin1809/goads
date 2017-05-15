@@ -20,10 +20,10 @@ class CreateProfileTable extends Migration
             $table->string('last_name')->nullable();
             $table->string('Contact_number')->nullable();
             $table->string('email')->unique();
-            $table->string('place_of_busniess')->nullable();
+            $table->string('place_of_business')->nullable();
             $table->text('address')->nullable();
             $table->enum('gender',['male','female'])->default('male');
-            $table->enum('matrial_status',['married','unmarried'])->default('unmarried');
+            $table->enum('marital_status',['married','unmarried'])->default('unmarried');
             $table->string('citizenship')->default('Inida');
             $table->string('pan_number')->nullable();
             $table->string('type_of_occupation')->nullable();

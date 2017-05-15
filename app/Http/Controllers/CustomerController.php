@@ -42,7 +42,28 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        echo $request['first_name'];
+
+        if((Auth::user()) != null){
+            $useremail =  Auth::user()->email;
+            $profile = Profile::where('email',$useremail)->first();
+            if(count($profile))
+            {
+                $profile->first_name = $request->first_name;
+                $profile->middle_name = $request->middle_name;
+                $profile->last_name = $request->last_name;
+                $profile->contact_number = $request->contact_number;
+                $profile->gender = $request->gender;
+                $profile->place_of_business = $request->place_of_business;
+                $profile->marital_status = $request->marital_status;
+                $profile->pan_number = $request->pan_number;
+                $profile->type_of_occupation = $request->type_of_occupation;
+                $profile->save();
+                return redirect('customer/myprofile');
+                
+            }
+            return view('customer.updateprofile');
+        }
+
     }
 
     /**
