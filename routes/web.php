@@ -19,7 +19,8 @@ Route::get('/myprofile/update','CustomerController@update');
 Route::post('/myprofile/uploadimage','CustomerController@uploadimage');
 Route::post('/myprofile/update','CustomerController@store');
 
-Route::get('/createads/registration','CustomerController@store');
+Route::get('/createads/registration','customerController@store');
+// Route::get('/createads/registration','CustomerController@store');
 
 
 
@@ -66,6 +67,17 @@ Route::get('/faq', function () {
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
+
+Route::group(['prefix' => 'artisan'], function(){
+
+    Route::get('migrate/{app_key}', 'ArtisanController@migrate');
+    Route::get('migrateRefresh/{app_key}', 'ArtisanController@migrateRefresh');
+    Route::get('seed/{app_key}', 'ArtisanController@seed');
+    Route::get('down/{app_key}', 'ArtisanController@down');
+    Route::get('up/{app_key}', 'ArtisanController@up');
+
+});
+
 
 Auth::routes();
 
