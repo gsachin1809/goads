@@ -13,41 +13,39 @@
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/customer/hello','CustomerController@index');
-Route::get('/customer/myprofile/update','CustomerController@update');
-Route::post('/customer/myprofile/update','CustomerController@store');
+Route::get('/hello','CustomerController@index');
+Route::get('/myprofile','CustomerController@myprofile');
+Route::get('/myprofile/update','CustomerController@update');
+Route::post('/myprofile/uploadimage','CustomerController@uploadimage');
+Route::post('/myprofile/update','CustomerController@store');
+
+Route::get('/createads/registration','CustomerController@store');
 
 
 
-Route::get('/customer/chat', function () {
-    return view('customer.chat');
-});
+Route::get('/chat', 'CustomerController@chat')->name('customer/chat');
 
 
-Route::get('/customer/createads', function () {
+Route::get('/createads', function () {
     return view('customer.createads');
 });
 
-Route::get('/customer/createads/Registeration', function () {
+Route::get('/createads/Registeration', function () {
     return view('customer.registration');
 });
 
 
-Route::get('/customer/myads', function () {
+Route::get('/myads', function () {
     return view('customer.myads');
 });
 
-Route::get('/customer/wallet', function () {
+Route::get('/wallet', function () {
     return view('customer.wallet');
 });
 
 
-Route::get('/customer/myprofile', function () {
-    return view('customer.myprofile');
-});
 
-
-Route::get('/customer/index', function () {
+Route::get('/index', function () {
     return view('customer.index');
 });
 
@@ -55,6 +53,18 @@ Route::get('/customer/index', function () {
 
 Route::get('/', function () {
     return view('index');
+});
+Route::get('/traffic', function () {
+    return view('traffic');
+});
+Route::get('/contactus', function () {
+    return view('contactus');
+});
+Route::get('/faq', function () {
+    return view('faq');
+});
+Route::get('/aboutus', function () {
+    return view('aboutus');
 });
 
 Auth::routes();

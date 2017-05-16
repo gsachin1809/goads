@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use App\Models\Profile;
+
 
 
 class CustomerController extends Controller
@@ -15,10 +17,21 @@ class CustomerController extends Controller
      * @return \Illuminate\Http\Response
      */
     // $useremail =  Auth::user()->email;
-    public function index()
+    public function myprofile()
     {
-        //
         
+        if((Auth::user()) != null){
+            $useremail =  Auth::user()->email;
+            $profile = Profile::where('email',$useremail)->first();
+
+            if(count($profile))
+            {
+                
+                return view('customer.myprofile')->with('profile', $profile);
+            }
+            return view('customer.myprofile');
+        }
+
 
         
 
@@ -29,7 +42,26 @@ class CustomerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    
+    public function uploadimage()
+    {
+        echo "chek";
+        // if(Input::hasFile('image'))
+        // {
+
+
+            $file = Input::file('image');
+            $file->move(public_path().'/profileimage/',$fileClientOriginalName());
+            echo "fsdfg";
+            return "save in database";
+
+        // }
+
+
+
+
+    }
+    public function createads()
     {
         //
     }
@@ -102,8 +134,6 @@ class CustomerController extends Controller
             $profile = Profile::where('email',$useremail)->first();
             if(count($profile))
             {
-                // echo $profile;
-                // die;
                 return view('customer.updateprofile')->with('profile', $profile);
             }
             return view('customer.updateprofile');
@@ -122,5 +152,9 @@ class CustomerController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function chat()
+    {
+        return view('customer.chat');
     }
 }

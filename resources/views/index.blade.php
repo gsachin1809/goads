@@ -1,27 +1,8 @@
-@extends('shared._pageslayout')
-@section('content')
-	<div class="well">
-		<div class="row">
+@extends('layouts.app')
 
-			<div class="col-sm-2 dropdown">
-			    <div class="btn btn-default dropdown-toggle" id="menu1" data-toggle="dropdown">Catogries
-			    <span class="caret"></span></div>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Electronic</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cloths</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jobs</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Computers</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mobiles</a></li>
-			      
-			    </ul>
-		  	</div>
-		  	
-			<div class="pull-right">
-				Home | Contact Us | FAQ | Traffic |<a href="/login"> <button class="btn btn-success" href="/login">Login </button> </a>
-			</div>
-		</div> 	
-		
-	</div>
+@section('content')
+	
+<div class="container">
 	<div class="col-sm-12">
 		<table class="table">
 		    <tbody>
@@ -89,4 +70,5 @@
 		    </tbody>
   		</table>
 	</div>
+</div>
 @stop

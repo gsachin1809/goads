@@ -44,9 +44,19 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
+                            <li><a href="/">Home</a></li>
+                            <li><a href="traffic">Traffic</a></li>
+                            <li><a href="faq">FAQ</a></li>
+                            <li><a href="contactus">Contact Us</a></li>
+                            <li><a href="aboutus">About Us</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+                            <li><a href="/">Home</a></li>
+                            <li><a href="traffic">Traffic</a></li>
+                            <li><a href="faq">FAQ</a></li>
+                            <li><a href="contactus">Contact Us</a></li>
+                            <li><a href="aboutus">About Us</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -54,7 +64,7 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="myprofile">Profile</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="chat">Chat</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ route('customer/chat') }}">Chat</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="wallet">wallet</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="myads">My ads</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="createads">Create ads</a></li>

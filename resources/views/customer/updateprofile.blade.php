@@ -31,35 +31,35 @@
 						<div class="row">
 							<div class="col-sm-4 form-group">
 								<label>Gender</label>
-								<input type="text" placeholder="Enter City Name Here.." class="form-control" name="gender">
+								<input type="text" placeholder="male/female" class="form-control" name="gender" value="{{ $profile->gender }}">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Marital Status</label>
-								<input type="text" placeholder="Enter State Name Here.." class="form-control" name="marital_status">
+								<input type="text" placeholder="married/unmarried" class="form-control" name="marital_status" value="{{ $profile->marital_status }}">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Citizenship</label>
-								<input type="text" placeholder="Enter Zip Code Here.." class="form-control" value="{{ $profile->citizenship }}" name="citizenship">
+								<input type="text" placeholder="Enter country Here.." class="form-control" value="{{ $profile->citizenship }}" name="citizenship">
 							</div>		
 						</div>
 						<div class="row">
 							<div class="col-sm-4 form-group">
 								<label>PAN number</label>
-								<input type="text" placeholder="Enter City Name Here.." class="form-control" value="{{ $profile->pan_number }}" name="pan_number">
+								<input type="text" placeholder="Enter PAN Number Here.." class="form-control" value="{{ $profile->pan_number }}" name="pan_number">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Occuption Type</label>
-								<input type="text" placeholder="Enter State Name Here.." class="form-control" value="{{ $profile->type_of_occuption }}" name="occuption">
+								<input type="text" placeholder="Enter you occuption.." class="form-control" value="{{ $profile->type_of_occuption }}" name="occuption">
 							</div>	
 							<div class="col-sm-4 form-group">
 								<label>Contact Number</label>
-								<input type="text" placeholder="Enter Zip Code Here.." class="form-control" name="contact_number">
+								<input type="text" placeholder="Enter Contact number .." class="form-control" name="contact_number">
 							</div>		
 						</div>
 						<div class="row">
 							<div class="col-sm-12 form-group">
 								<label>Email</label>
-								<input type="text" placeholder="Enter Designation Here.." class="form-control" value="{{ $profile->email }}" name="email">
+								<input type="text" placeholder="Enter Designation Here.." class="form-control" value="{{ $profile->email }}" name="email" disabled>
 							</div>		
 							
 						</div>						

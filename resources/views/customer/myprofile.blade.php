@@ -12,23 +12,43 @@
 					    <tbody>
 					    	<tr>
 					        	<td>Full name:-</td>
-					        	<td>Sachin Gupta</td>
+					        	<td>{{ $profile->first_name }} {{ $profile->middle_name }} {{ $profile->last_name }}</td>
 					      	</tr>
   					      	<tr>
 					        	<td>Gender </td>
-					        	<td>Male </td>
+					        	<td>{{ $profile->gender}} </td>
 					      	</tr>
 					      	<tr>
 					        	<td> Phone Number</td>
-					        	<td> 9538614612</td>
+					        	<td> {{ $profile->contact_number }}</td>
 					      	</tr>
 					      	<tr>
 					        	<td>email</td>
-					        	<td>gsachin1809@gmail.com</td>
+					        	<td>{{ $profile->email }}</td>
+					      	</tr>
+					      	<tr>
+					        	<td>Address</td>
+					        	<td>{{ $profile->address }}</td>
+					      	</tr>
+					      	<tr>
+					        	<td>marital status</td>
+					        	<td>{{ $profile->marital_status }}</td>
+					      	</tr>
+					      	<tr>
+					        	<td>PAN number</td>
+					        	<td>{{ $profile->pan_number  }}</td>
+					      	</tr>
+					      	<tr>
+					        	<td>Citizenship</td>
+					        	<td>{{ $profile->citizenship }}</td>
 					      	</tr>
 					      	<tr>
 						      	<td>
 						      		<button type="button" class="btn btn-info btn-lg" onclick="window.location='/customer/myprofile/update'">Update Details</button>
+
+					      		</td>
+					      		<td>
+						      		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">chagne Pic</button>
 
 					      		</td>
 				      		</tr>
@@ -39,6 +59,28 @@
 		      </tr>
 		    </tbody>
 		  </table>
+	  	<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Modal Header</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<div class="row">
+				      	<form action="myprofile/uploadimage" method="post">
+				      		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+				      		<input type="file" name="image">
+				      		<button type="submit"> upload</button>
+			      		</form>
+		        	</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			</div>
+		</div>
 	</div>
 </div>
 @stop
