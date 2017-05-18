@@ -22,13 +22,13 @@ class CreateProfileTable extends Migration
             $table->string('email')->unique();
             $table->string('place_of_business')->nullable();
             $table->text('address')->nullable();
-            $table->enum('gender',['male','female'])->default('male');
-            $table->enum('marital_status',['married','unmarried'])->default('unmarried');
-            $table->string('citizenship')->default('Inida');
+            $table->enum('gender',['male','female'])->nullable()->default('male');
+            $table->enum('marital_status',['married','unmarried'])->nullable()->default('unmarried');
+            $table->string('citizenship')->default('India');
             $table->string('pan_number')->nullable();
             $table->string('type_of_occupation')->nullable();
             $table->timestamps();
-            $table->timestamps('deleted_at');
+            $table->softDeletes();;
 
         });
     }

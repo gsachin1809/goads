@@ -6,8 +6,16 @@
 		<table class="table">
 		    <tbody>
 		      <tr>
-		        <td width="50%"><img src="https://static.turbosquid.com/Preview/2014/05/16__04_50_44/tguy3_render06.jpg2df93298-c5d1-47e0-a02a-4025eb03c98aOriginal.jpg" width="100%"></td>
+		        <td width="50%">
+		        @if($profileimage->photo == null )
+		        	<img src="https://static.turbosquid.com/Preview/2014/05/16__04_50_44/tguy3_render06.jpg2df93298-c5d1-47e0-a02a-4025eb03c98aOriginal.jpg" width="100%"></td>
+	        	@else 
+        			<img src="upload/profileimage/{{ $profileimage->photo }}" width="100%"></td>
+    			@endif
+
+
 		        <td>
+		        	@if(isset($profile))
 		        	 <table class="table table-striped">
 					    <tbody>
 					    	<tr>
@@ -42,9 +50,14 @@
 					        	<td>Citizenship</td>
 					        	<td>{{ $profile->citizenship }}</td>
 					      	</tr>
-					      	<tr>
+					      	
+					    </tbody>
+					  </table>
+					@endif
+					  <table class="table table-striped">
+					  		<tr>
 						      	<td>
-						      		<button type="button" class="btn btn-info btn-lg" onclick="window.location='/customer/myprofile/update'">Update Details</button>
+						      		<button type="button" class="btn btn-info btn-lg" onclick="window.location='/myprofile/update'">Update Details</button>
 
 					      		</td>
 					      		<td>
@@ -52,9 +65,8 @@
 
 					      		</td>
 				      		</tr>
-
-					    </tbody>
-					  </table>
+			      		</table>
+				  	
 		        </td>
 		      </tr>
 		    </tbody>
@@ -68,9 +80,10 @@
 			      </div>
 			      <div class="modal-body">
 			      	<div class="row">
-				      	<form action="myprofile/uploadimage" method="post">
+				      	<form action="myprofile/uploadimage" method="post" enctype="multipart/form-data">
+
 				      		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-				      		<input type="file" name="image">
+				      		<input type="file" name="profileimage">
 				      		<button type="submit"> upload</button>
 			      		</form>
 		        	</div>

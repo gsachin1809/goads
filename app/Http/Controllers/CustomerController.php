@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Auth;
+use Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use App\Models\Profile;
-
+use App\Models\ProfileImageModel;
 
 
 class CustomerController extends Controller
@@ -23,18 +24,20 @@ class CustomerController extends Controller
         if((Auth::user()) != null){
             $useremail =  Auth::user()->email;
             $profile = Profile::where('email',$useremail)->first();
+            $profileimage = ProfileImageModel::where('email',$useremail)->first();
 
             if(count($profile))
             {
                 
-                return view('customer.myprofile')->with('profile', $profile);
+                return view('customer.myprofile')->with('profile', $profile)->with('profileimage', $profileimage);
             }
             return view('customer.myprofile');
         }
+    }
 
-
-        
-
+    public function chat()
+    {
+        return view('customer.chat');
     }
 
     /**
@@ -43,28 +46,48 @@ class CustomerController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function uploadimage()
+    public function uploadimage(Request $request)
     {
-        echo "chek";
-        // if(Input::hasFile('image'))
-        // {
-
-
-            $file = Input::file('image');
-            $file->move(public_path().'/profileimage/',$fileClientOriginalName());
-            echo "fsdfg";
-            return "save in database";
-
-        // }
-
-
-
-
+        
+        $useremail =  Auth::user()->email;
+        $profileimage = $request->file('profileimage');
+        $filename = $useremail.'.jpg';
+        
+        Image::make($profileimage->getRealPath())->save(public_path('upload\profileimage\\'.$filename));
+        $profileimage = ProfileImageModel::where('email',$useremail)->first();
+        $profileimage->photo = $filename;
+        $profileimage->save();
+        return redirect('myprofile');
     }
+    
+
     public function createads()
     {
-        //
+        return view('customer.typeofads');
     }
+
+    public function adsregistration(Request $request)
+    {
+        $typeofads = $request->typeofads;
+        return view('customer.registration')->with('typeofads', $typeofads);
+        
+    }
+
+    public function payumoney(Request $request)
+    {
+        $typeofads = $request->typeofads;
+        return view('customer.payumoney')->with('typeofads', $typeofads);
+        
+    }
+
+    public function newads()
+    {
+        return view('customer.newads');
+    }
+
+
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -90,7 +113,7 @@ class CustomerController extends Controller
                 $profile->pan_number = $request->pan_number;
                 $profile->type_of_occupation = $request->type_of_occupation;
                 $profile->save();
-                return redirect('customer/myprofile');
+                return redirect('myprofile');
                 
             }
             return view('customer.updateprofile');
@@ -153,8 +176,5 @@ class CustomerController extends Controller
     {
         //
     }
-    public function chat()
-    {
-        return view('customer.chat');
-    }
+    
 }

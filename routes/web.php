@@ -14,26 +14,18 @@
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/hello','CustomerController@index');
+
 Route::get('/myprofile','CustomerController@myprofile');
 Route::get('/myprofile/update','CustomerController@update');
 Route::post('/myprofile/uploadimage','CustomerController@uploadimage');
 Route::post('/myprofile/update','CustomerController@store');
 
-Route::get('/createads/registration','customerController@store');
-// Route::get('/createads/registration','CustomerController@store');
-
-
+Route::get('/createads','CustomerController@createads');
+Route::post('/createads/registration','CustomerController@adsregistration');
+Route::post('/createads/payumoney','CustomerController@payumoney');
+Route::post('/createads/newads','CustomerController@newads');
 
 Route::get('/chat', 'CustomerController@chat')->name('customer/chat');
-
-
-Route::get('/createads', function () {
-    return view('customer.createads');
-});
-
-Route::get('/createads/Registeration', function () {
-    return view('customer.registration');
-});
 
 
 Route::get('/myads', function () {
@@ -44,13 +36,9 @@ Route::get('/wallet', function () {
     return view('customer.wallet');
 });
 
-
-
 Route::get('/index', function () {
     return view('customer.index');
 });
-
-
 
 Route::get('/', function () {
     return view('index');

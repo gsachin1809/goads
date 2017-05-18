@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Models\Profile;
+use App\Models\ProfileImageModel;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -62,6 +64,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+        $profile = new Profile;
+        $profile->email = $data['email'];
+        $profile->save();
+
+        $profileimage = new ProfileImageModel;
+        $profileimage->email = $data['email'];
+        $profileimage->save();
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

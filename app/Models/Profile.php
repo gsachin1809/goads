@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Profile extends Model
 {
-	// use SoftDeletes;
+	use SoftDeletes;
 
 	protected $table = 'profile';
 
-    // protected $dates = ['deleted_at'];
+    protected $dates = ['deleted_at'];
     public $timestamps = false;
 }
