@@ -129,7 +129,7 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-          <div class="col-md-6 well pricing-table">
+          <div class="col-md-6 well pricing-table" style="background-color:#C0C0C0">
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -157,7 +157,7 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-          <div class="col-md-6 well pricing-table">
+          <div class="col-md-6 well pricing-table" style="background-color:#FFD700">
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -188,7 +188,7 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-	        <div class="col-md-6 well pricing-table">
+	        <div class="col-md-6 well pricing-table" style="background-color:#e5e4e2">
 	            <div class="pricing-table-holder">
 	                <center>
 	                    <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -219,7 +219,7 @@ border-color: #23A4F2;
 	                </button>
 	            </div>
 	        </div>
-	              <div class="col-md-6 well pricing-table">
+          <div class="col-md-6 well pricing-table" style="background-color:#b9f2ff ">
 	              <div class="wrp" style="box-shadow:-22px 17px 6px rgba(178, 171, 171, 0.39)">
 	            <div class="pricing-table-holder">
 	                <center>
@@ -260,7 +260,7 @@ border-color: #23A4F2;
 	            </div> 
 	            </div>
 	        </div>
-	              <div class="col-md-6 well pricing-table">
+          <div class="col-md-6 well pricing-table" style="background-color:#4169e1">
 	            <div class="pricing-table-holder">
 	                <center>
 	                    <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -273,7 +273,7 @@ border-color: #23A4F2;
                   
 	            </div>
 	            
-	            <div class="custom-button-group" style="">
+	            <div class="custom-button-group" >
 	        
               PLATINUM PACKAGE
 
