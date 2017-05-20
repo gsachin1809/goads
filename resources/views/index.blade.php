@@ -1,74 +1,89 @@
 @extends('layouts.app')
 
 @section('content')
-	
+<style type="text/css">
+	.borderless td, .borderless th {
+    	border: none !important;
+	}	
+
+</style>
 <div class="container">
-	<div class="col-sm-12">
-		<table class="table">
-		    <tbody>
-		      <tr>
-		        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+	<div class="col-lg-12">
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-				        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-		        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-		      </tr>
-		      <tr>
-		        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-				        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-		        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-		      </tr>
-		      <tr>
-		        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-				        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
 						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-		        <td>
-		        	<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png " class="img-rounded" alt="Cinque Terre" width="304" height="236">
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
 					<label>
-						Price :-100
+						Price :-100 type:- Individual (Books)
 					</label>
-				</td>
-		      </tr>
-		      
-		    </tbody>
-  		</table>
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
+					<label>
+						Price :-100 type:- Individual (Books)
+					</label>
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
+					<label>
+						Price :-100 type:- Individual (Books)
+					</label>
+		</div>
+		<div class="col-lg-4">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2016/06/google-green-ad-button-1920.png" class="img-rounded" alt="Cinque Terre" width="100%">
+					<label>
+						Price :-100 type:- Individual (Books)
+					</label>
+		</div>
+
+
+		
 	</div>
 </div>
 @stop
