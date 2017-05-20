@@ -49,14 +49,33 @@ class CustomerController extends Controller
     public function uploadimage(Request $request)
     {
         
+        echo "hello";
+        
         $useremail =  Auth::user()->email;
         $profileimage = $request->file('profileimage');
         $filename = $useremail.'.jpg';
         
-        Image::make($profileimage->getRealPath())->save(public_path('upload\profileimage\\'.$filename));
+        echo "line 58";
+        echo $profileimage;
+
+        if($profileimage)
+            echo "<br>file get successfull";
+        else
+            echo " <br>file get failed";
+
+        if(Image::make($profileimage->getRealPath())->save('upload\profileimage\\'.$filename))
+            echo " <br>upload successfull";
+        else
+            echo " <br> file get failed";
+
         $profileimage = ProfileImageModel::where('email',$useremail)->first();
         $profileimage->photo = $filename;
         $profileimage->save();
+
+        // echo "<br> profram end end";
+        // echo $this->upload->display_errors();
+        // die;
+
         return redirect('myprofile');
     }
     

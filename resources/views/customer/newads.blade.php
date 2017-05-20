@@ -29,6 +29,14 @@
         </div>
       </div>
 
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="Mail Id ">Discount Offered</label>  
+        <div class="col-md-6">
+        <input id="Mail Id " name="Mail Id " type="text" placeholder="Discount in percentage  " class="form-control input-md" required="">
+          
+        </div>
+      </div>
+
       <!-- Text input-->
       <div class="form-group">
         <label class="col-md-4 control-label" for="User Id">Contact Person Name</label>  
@@ -42,7 +50,21 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="Mail Id ">Contact Number</label>  
         <div class="col-md-6">
-        <input id="Mail Id " name="Mail Id " type="text" placeholder="Contact Person number" class="form-control input-md" required="">
+        <input id="Mail Id " name="Contact number " type="text" placeholder="Contact Person number" class="form-control input-md" required="">
+          
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="Mail Id ">Package</label>  
+        <div class="col-md-6">
+         <select class="form-control" id="sel1">
+        <option>FREE PACKAGE</option>
+        <option>SILVER PACKAGE</option>
+        <option>GOLD PACKAGE</option>
+        <option>PLATINUM PACKAGE</option>
+        <option>DIAMOND PACKAGE</option>
+        <option>ROYAL PACKAGE</option>
+      </select>
           
         </div>
       </div>
@@ -53,6 +75,7 @@
           
         </div>
       </div>
+
       <div class="form-group">
         <label class="col-md-4 control-label" for="Mail Id ">Image</label>  
         <div class="col-md-6">

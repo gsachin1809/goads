@@ -14,15 +14,28 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
         body {
-                background-color: #DD120B;
-                color:#1f0c82;
+                background-color: #FFE8DF;
+                /*background-color: #DD120B;*/
+                color:black;
             }
+        .strong {
+
+            color: black;
+            font-family: "Times New Roman", Times, serif;
+            font-style: oblique;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+            color: black!important;
+        }
     </style>
 
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+    <div class="strong">
+        <nav class="navbar navbar-default navbar-static-top" style="background-color:#DD120B;">
             <div class="container">
                 <div class="navbar-header">
 
@@ -36,8 +49,11 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                    GoAds
-                        <!-- {{ config('app.name', 'Laravel') }} -->
+                        <div class="strong">
+                            <img src="logo.jpg" width="10%">
+
+                        GoAds
+                        </div>
                     </a>
                 </div>
 
@@ -52,17 +68,18 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="/">Home</a></li>
-                            <li><a href="traffic">Traffic</a></li>
+                            <li><a href="traffic">Tariffs</a></li>
                             <li><a href="faq">FAQ</a></li>
-                            <li><a href="contactus">Contact Us</a></li>
+                            <li><a href="contact-us">Contact Us</a></li>
                             <li><a href="aboutus">About Us</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li><a href="/">Home</a></li>
-                            <li><a href="traffic">Traffic</a></li>
+                            <li><a href="traffic">Tariffs</a></li>
                             <li><a href="faq">FAQ</a></li>
-                            <li><a href="contactus">Contact Us</a></li>
+                            <li><a href="contact-us">Contact Us</a></li>
+                            
                             <li><a href="aboutus">About Us</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -93,6 +110,7 @@
                 </div>
             </div>
         </nav>
+        </div >
 
         @yield('content')
     </div>

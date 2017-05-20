@@ -100,7 +100,7 @@ border-color: #23A4F2;
 	
 	<div class="container ">
 	    <div class="row">
-          <div class="col-md-4 well pricing-table">
+          <div class="col-md-6 well pricing-table">
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -109,24 +109,16 @@ border-color: #23A4F2;
                           Get Started with Goads Free
                       </p>
                   </center>
-                  
-
-                  
               </div>
-              
-              <div class="custom-button-group" style="">
-              </div>
-              
               <div class="pricing-feature-list">
                   <ul class="list-group">
                       <li class="list-group-item">4 X 4 Inches Box</li>
                       <li class="list-group-item">100 Clicks Per Month</li>
-                      <li class="list-group-item">Morbi leo risus</li>
                       <li class="list-group-item">500 Promotional Mails Per Month</li>
                       <li class="list-group-item">For 5 5 to 10 Seconds Brand Promotionl Ads in our other sites like Shopping, Friends, Chat etc.</li>
                       <hr>
-                       <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website.Free Package is valid for 3 Months. There after a monthly charge of Rs. 500/- applicable.</li>
-                      <li class="list-group-item">Free Package is valid for 3 Months. There after a monthly charge of Rs. 500/- applicable.</li>
+                       <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website..</li>
+                      <li class="list-group-item">Free Package is valid for 3 Months. There after a monthly charge of 6 GBP applicable.</li>
                       
                     </ul>
               </div>
@@ -137,7 +129,7 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-          <div class="col-md-4 well pricing-table">
+          <div class="col-md-6 well pricing-table">
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -146,35 +138,26 @@ border-color: #23A4F2;
                          Get Started With Goads Silver
                       </p>
                   </center>
-                  
-
-                  
               </div>
-              
-              <div class="custom-button-group" style="">
-              </div>
-              
               <div class="pricing-feature-list">
                   <ul class="list-group">
                       <li class="list-group-item">4 X 4 Inches Ad Box</li>
-                      <li class="list-group-item">6 Rs. 1000/- if monthly</li>
-                      <li class="list-group-item">For 25 Rs. 10000/- if yearly (2 months free)</li>
-                      <li class="list-group-item">1000 Clicks Per Month</li>
+                      <li class="list-group-item">12 GBP per Month</li>
+                      <li class="list-group-item">For Year package 120 GBP</li>
+                      <li class="list-group-item">5000 Clicks Per Month</li>
                       <li class="list-group-item">10000 Promotional Mails Per Month</li>
                       <hr>
-                       <li class="list-group-item">5 to 10 Seconds Brand Promotionl Ads in our other sites like Shopping, Friends, Chat etc.</li>
+                       <li class="list-group-item">5 to 10 Seconds Brand Promotionl Ads in our other sites like Meet, Chats etc.</li>
                       <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website.</li>
-                      <li class="list-group-item">If you have your own website, we will promote your website and help to increase your business.</li>
-                      
+                      <li class="list-group-item">If you have your own website, every month we are providing (promotion ) 100 clicks additional.</li>
               </div>
-              
               <div class="price-table-button-holder">
                                 <button class="btn btn-info btn-block">
                       GET NOW
                   </button>
               </div>
           </div>
-          <div class="col-md-4 well pricing-table">
+          <div class="col-md-6 well pricing-table">
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -185,20 +168,16 @@ border-color: #23A4F2;
                   </center>
                   
               </div>
-              <div class="custom-button-group" style="">
-           </div>
               <div class="pricing-feature-list">
                   <ul class="list-group">
                       <li class="list-group-item">4 X 4 Inches Ad Box</li>
-                      <li class="list-group-item">30 Rs. 2000/- if monthly</li>
-                      <li class="list-group-item">For 30 Rs. 20000/- if yearly (2 months free)/li>
+                      <li class="list-group-item">24 GBP Per Month</li>
                       <li class="list-group-item">2000 Clicks Per Month</li>
-                      <li class="list-group-item">20000 Promotional Mails Per Month/li>
+                      <li class="list-group-item">20000 Promotional Mails Per Month</li>
                       <hr>
-                       <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">5 to 10 Seconds Brand Promotionl Ads in our other sites like Shopping, Friends, Chat etc. for 2 Times</li>
+                      <li class="list-group-item"> 2 times 5 to 10 Seconds Brand Promotionl Ads in our other sites like Meet, Chat etc. </li>
                       <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website.</li>
-                      <li class="list-group-item">f you have your own website, we will promote your website and help to increase your business.</li>
+                      <li class="list-group-item">If you have your own website, every month we are providing (promotion) 200 clicks additional.</li>
                      
                     </ul>
               </div>
@@ -209,7 +188,7 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-	        <div class="col-md-4 well pricing-table">
+	        <div class="col-md-6 well pricing-table">
 	            <div class="pricing-table-holder">
 	                <center>
 	                    <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -218,27 +197,20 @@ border-color: #23A4F2;
 	                        Get Started with Goads Platinum
 	                    </p>
 	                </center>
-	                
-
-                  
 	            </div>
-	            
-	            <div class="custom-button-group" style="">
-	            </div>
-	            
 	            <div class="pricing-feature-list">
 	                <ul class="list-group">
                       <li class="list-group-item">4 X 4 Inches Ad Box</li>
-                      <li class="list-group-item">Rs. 3000/- if monthlyRs. 30000/- if yearly (2 months free)For 5 3500 Clicks Per Month35000 Promotional Mails Per Month</li>
-                      <li class="list-group-item">Rs. 30000/- if yearly (2 months free)For 5 3500 Clicks Per Month35000 Promotional Mails Per Month</li>
-                      <li class="list-group-item">For 5 3500 Clicks Per Month35000 Promotional Mails Per Month</li>
+                      <li class="list-group-item">36 GBP Per Month</li>
+                      <li class="list-group-item">For year package 360 GBP</li>
+                      <li class="list-group-item">3500 clicks per Month</li>
                       <li class="list-group-item">35000 Promotional Mails Per Month</li>
+                     
                       <hr>
-                       <li class="list-group-item">5 to 10 Seconds Brand Promotionl Ads in our other sites like Shopping, Friends, Chat etc. For 10 Times.</li>
-                      <li class="list-group-item"> Charges of 5% is applicable on all your sales that were happened through our website.</li>
-                      <li class="list-group-item">If you have your own website, we will promote your website and help to increase your business.</li>
-                      
-                    </ul>
+                      <li class="list-group-item"> 2 times 5 to 10 Seconds Brand Promotionl Ads in our other sites like Meet, Chat etc. </li>
+                      <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website.</li>
+                      <li class="list-group-item">If you have your own website, every month we are providing (promotion) 200 clicks additional.</li>
+                     </ul>
 	            </div>
 	            
 	            <div class="price-table-button-holder">
@@ -247,7 +219,7 @@ border-color: #23A4F2;
 	                </button>
 	            </div>
 	        </div>
-	              <div class="col-md-4 well pricing-table">
+	              <div class="col-md-6 well pricing-table">
 	              <div class="wrp" style="box-shadow:-22px 17px 6px rgba(178, 171, 171, 0.39)">
 	            <div class="pricing-table-holder">
 	                <center>
@@ -267,15 +239,16 @@ border-color: #23A4F2;
 	            <div class="pricing-feature-list">
 	                <ul class="list-group">
                       <li class="list-group-item">4 X 4 Inches Ad Box</li>
-                      <li class="list-group-item">6 Home Page Scrolling Ad</li>
-                      <li class="list-group-item">For 25 Rs. 5000/- if monthly</li>
-                      <li class="list-group-item">Rs. 50000/- if yearly (2 months free)</li>
-                      <li class="list-group-item">10000 Clicks Per Month</li>
+                      <li class="list-group-item">60 GBP Per Month</li>
+                      <li class="list-group-item">For year package 600 GBP</li>
+                      <li class="list-group-item">10,000 clicks per Month</li>
+                      <li class="list-group-item">1,00,000 Promotional Mails Per Month</li>
+                     
                       <hr>
-                       <li class="list-group-item">100000 Promotional Mails Per Month</li>
-                      <li class="list-group-item">5 to 10 Seconds Brand Promotionl Ads in our other sites like Shopping, Friends, Chat etc. for 25 Times</li>
-                      <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website</li>
-                      <li class="list-group-item">If you have your own website, we will promote your website and help to increase your business.</li>
+                      <li class="list-group-item"> 25 times 5 to 10 Seconds Brand Promotionl Ads in our other sites like Meet, Chat etc. </li>
+                      <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website.</li>
+                      <li class="list-group-item">If you have your own website, every month we are providing (promotion) 200 clicks additional.</li>
+                      <li class="list-group-item">Home Page scrolling ads.</li>
                       
                     </ul>
 	            </div>
@@ -287,7 +260,7 @@ border-color: #23A4F2;
 	            </div> 
 	            </div>
 	        </div>
-	              <div class="col-md-4 well pricing-table">
+	              <div class="col-md-6 well pricing-table">
 	            <div class="pricing-table-holder">
 	                <center>
 	                    <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -309,16 +282,17 @@ border-color: #23A4F2;
 	            <div class="pricing-feature-list">
 	                <ul class="list-group">
                       <li class="list-group-item">4 X 4 Inches Ad Box</li>
-                      <li class="list-group-item">30 Home Page Scrolling Ads</li>
-                      <li class="list-group-item">For 30 10 Times Banner Ads</li>
-                      <li class="list-group-item">Rs. 10000/- if monthly</li>
-                      <li class="list-group-item">Rs. 99000/- if yearly (2 months free)</li>
+                      <li class="list-group-item">120 GBP Per Month</li>
+                      <li class="list-group-item">For year package 1200 GBP</li>
+                      <li class="list-group-item">5,00,000 clicks per Month</li>
+                      <li class="list-group-item">10,00,000 Promotional Mails Per Month</li>
+                     
                       <hr>
-                       <li class="list-group-item">500000 Clicks Per Month</li>
-                      <li class="list-group-item">1000000 Promotional Mails Per Month</li>
-                      <li class="list-group-item">5 to 10 Seconds Brand Promotionl Ads in our other sites like Shopping, Friends, Chat etc. For 50 Times</li>
+                      <li class="list-group-item"> 100 times 5 to 10 Seconds Brand Promotionl Ads in our other sites like Meet, Chat etc. </li>
                       <li class="list-group-item">Charges of 5% is applicable on all your sales that were happened through our website.</li>
-                      <li class="list-group-item">If you have your own website, we will promote your website and help to increase your business.</li>
+                      <li class="list-group-item">If you have your own website, every month we are providing (promotion) 200 clicks additional.</li>
+                      <li class="list-group-item">Home Page scrolling ads.</li>
+                      <li class="list-group-item">10 Time Banners Ads</li>
                     </ul>
 	            </div>
 	            

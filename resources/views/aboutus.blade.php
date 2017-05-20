@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="post-content-section">
-    <div class="container">
+    <div class="container" >
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 post-title-block">
@@ -77,4 +77,7 @@
 
     </div> <!-- /container -->
 </section>
+<div class="col-sm-12">
+  <img src="/upload/images/about_us.jpg" width="100%">
+</div>
 @endsection

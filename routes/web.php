@@ -46,7 +46,7 @@ Route::get('/', function () {
 Route::get('/traffic', function () {
     return view('traffic');
 });
-Route::get('/contactus', function () {
+Route::get('/contact-us', function () {
     return view('contactus');
 });
 Route::get('/faq', function () {
