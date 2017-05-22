@@ -82,5 +82,8 @@
         
     </div>
     <!--/panel-group-->
+    <div class="col-sm-12">
+      <img src="/upload/images/faq.jpg" width="100%">
+    </div>
 </div>
 @endsection

@@ -1,8 +1,47 @@
 @extends('layouts.app')
 
 @section('content')
-    <form class="form-horizontal">
+    <form class="form-horizontal" action="/createads/payumoney" method="post">
       <fieldset>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="Address">About Me</label>
+        <div class="col-md-4">                     
+          <textarea class="form-control" id="Address" name="Address" placeholder="Description"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="Address">Vision </label>
+        <div class="col-md-4">                     
+          <textarea class="form-control" id="Address" name="Address" placeholder="Description"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="Address">Mission</label>
+        <div class="col-md-4">                     
+          <textarea class="form-control" id="Address" name="Address" placeholder="Description"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="User Id">Contact Person Name</label>  
+        <div class="col-md-6">
+        <input id="User Id" name="User Id" type="text" placeholder="Contact Person Name" class="form-control input-md" required="">
+          
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="Mail Id ">Contact Number</label>  
+        <div class="col-md-6">
+        <input id="Mail Id " name="Contact number " type="text" placeholder="Contact Person number" class="form-control input-md" required="">
+          
+        </div>
+
+
 
       <div class="form-group">
         <label class="col-md-4 control-label" for="Company Name">Product Name</label>  
@@ -38,22 +77,7 @@
       </div>
 
       <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="User Id">Contact Person Name</label>  
-        <div class="col-md-6">
-        <input id="User Id" name="User Id" type="text" placeholder="Contact Person Name" class="form-control input-md" required="">
-          
-        </div>
-      </div>
-
-      <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="Mail Id ">Contact Number</label>  
-        <div class="col-md-6">
-        <input id="Mail Id " name="Contact number " type="text" placeholder="Contact Person number" class="form-control input-md" required="">
-          
-        </div>
-      </div>
+      
       <div class="form-group">
         <label class="col-md-4 control-label" for="Mail Id ">Package</label>  
         <div class="col-md-6">
@@ -86,7 +110,7 @@
       <label class="col-md-4 control-label" for="Mail Id "></label>  
         <div class="col-md-6">
         
-          <button class="btn btn-success" onclick="window.location='/'">Submit </button>  
+          <button class="btn btn-success" >Submit </button>  
         </div>
       </div>
       

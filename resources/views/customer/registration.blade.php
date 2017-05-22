@@ -6,21 +6,24 @@
 	    <h1 class="well">Registration Form</h1>
 			<div class="col-lg-12 well">
 			<div class="row">
-				<form action="payumoney" method="post">
+				<form action="newads" method="post">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}"> 
 				<input type="hidden" name="typeofads" value="{{ $typeofads }}">
 					<div class="col-sm-12">
 					<div class="form-group">
-						<label>Pan Card</label>
-						<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
+						<label>Pan Card / ID Number</label>
+						<input type="file" class="form-control">
+						<input type="text" placeholder="Enter PAN Number Here.." class="form-control">
 					</div>		
 					<div class="form-group">
 						<label>Adhar Card</label>
 						<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
+						<input type="text" placeholder="Enter Adhar Number Here.." class="form-control">
 					</div>		
 					<div class="form-group">
 						<label>DL Card</label>
 						<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
+						<input type="text" placeholder="Enter DL  Number Here.." class="form-control">
 					</div>		
 					<div class="form-group">
 						<label>Agreement</label>
@@ -40,7 +43,7 @@
     <h1 class="well">Registration Form</h1>
 	<div class="col-lg-12 well">
 	<div class="row">
-				<form action="payumoney" method="post">
+				<form action="newads" method="post">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}"> 
 				<input type="hidden" name="typeofads" value="{{ $typeofads }}">
 					<div class="col-sm-12">
@@ -64,7 +67,7 @@
 								<input type="text" placeholder="Enter State Name Here.." class="form-control">
 							</div>	
 							<div class="col-sm-4 form-group">
-								<label>IEC number</label>
+								<label>IEC number (Register Number )</label>
 								<input type="text" placeholder="Enter Zip Code Here.." class="form-control">
 							</div>		
 						</div>
@@ -127,6 +130,7 @@
 						<div class="form-group">
 							<label>Pan Card</label>
 							<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
+							<input type="text" placeholder="Enter PAN Number Here.." class="form-control">
 						</div>		
 						<div class="form-group">
 							<label>Recent Photo has to be uploaded</label>

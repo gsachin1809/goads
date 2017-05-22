@@ -47,7 +47,7 @@ class CustomerController extends Controller
      */
     
     public function uploadimage(Request $request)
-    {
+    {   
         
         echo "hello";
         

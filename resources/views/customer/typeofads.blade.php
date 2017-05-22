@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-	<form action="createads/registration" method="post">
+	<form action="/createads/registration" method="post">
 	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<div class="form-group">
 			<div >

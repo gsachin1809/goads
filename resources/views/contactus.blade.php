@@ -61,6 +61,9 @@
                         <p></p>
                     </div>
                 </div>
+                <div class="col-sm-12">
+                  <img src="/upload/images/contact.jpg" width="100%">
+                </div>
             </div>
         </section>
 @endsection
