@@ -6,9 +6,10 @@
                 body{
     font-family: 'Roboto', sans-serif;
 }
-        center>img{
+        
+		img{
            
-            position: relative;
+            position: absolute;
 margin-top: -24%;
              transition: all 1.5s ease-out;
         }
@@ -100,7 +101,14 @@ border-color: #23A4F2;
 	
 	<div class="container ">
 	    <div class="row">
-          <div class="col-md-6 well pricing-table">
+		<table class="table">
+		<tbody>
+
+		      <tr>
+
+		        <td>
+          <div class="col-md-12 well pricing-table" style="background-color:#C0C0C0">
+		  
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -129,7 +137,9 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-          <div class="col-md-6 well pricing-table" style="background-color:#C0C0C0">
+		  </td>
+		  <td>
+          <div class="col-md-12 well pricing-table" style="background-color:#C0C0C0">
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -157,7 +167,9 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-          <div class="col-md-6 well pricing-table" style="background-color:#FFD700">
+		   </td>
+		  <td>
+          <div class="col-md-12 well pricing-table" style="background-color:#C0C0C0">
               <div class="pricing-table-holder">
                   <center>
                       <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -188,7 +200,11 @@ border-color: #23A4F2;
                   </button>
               </div>
           </div>
-	        <div class="col-md-6 well pricing-table" style="background-color:#e5e4e2">
+		  </tr>
+		  <tr>
+		   </td>
+		  <td>
+	        <div class="col-md-12 well pricing-table" style="background-color:#C0C0C0">
 	            <div class="pricing-table-holder">
 	                <center>
 	                    <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -219,7 +235,9 @@ border-color: #23A4F2;
 	                </button>
 	            </div>
 	        </div>
-          <div class="col-md-6 well pricing-table" style="background-color:#b9f2ff ">
+			 </td>
+			<td>
+          <div class="col-md-12 well pricing-table" style="background-color:#C0C0C0 ">
 	              <div class="wrp" style="box-shadow:-22px 17px 6px rgba(178, 171, 171, 0.39)">
 	            <div class="pricing-table-holder">
 	                <center>
@@ -259,8 +277,9 @@ border-color: #23A4F2;
 	                </button>
 	            </div> 
 	            </div>
-	        </div>
-          <div class="col-md-6 well pricing-table" style="background-color:#4169e1">
+	        </div> </td>
+			<td>
+          <div class="col-md-12 well pricing-table" style="background-color:#C0C0C0">
 	            <div class="pricing-table-holder">
 	                <center>
 	                    <img src="http://www.placehold.it/100X100" class="img-responsive img-circle" alt="">
@@ -275,7 +294,7 @@ border-color: #23A4F2;
 	            
 	            <div class="custom-button-group" >
 	        
-              PLATINUM PACKAGE
+             
 
 	            </div>
 	            
@@ -302,6 +321,11 @@ border-color: #23A4F2;
 	                </button>
 	            </div>
 	        </div>
+			 </td>
+			  
+</tbody>
+
+  		</table>
 	    </div>
 	</div>
 @stop

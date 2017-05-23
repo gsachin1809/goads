@@ -7,18 +7,21 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <section id="contact" style="" >
             <div class="container" background-image="contactusbackground.jpg" >
-                <div class="row">
+                <div class="row" style="">
+				<div class="col-sm-12">
+                  <img src="/upload/images/contact.jpg" width="100%">
+                </div>
                     <div class="about_our_company" style="margin-bottom: 20px;">
                         <h1 style="color:black;">Write Your Message</h1>
                         <div class="titleline-icon"></div>
-                        <p style="color:black;">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                        
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8">
                         <form name="sentMessage" id="contactForm" novalidate="">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
                                         <p class="help-block text-danger"></p>
@@ -32,7 +35,7 @@
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
                                         <p class="help-block text-danger"></p>
@@ -61,9 +64,9 @@
                         <p></p>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                  <img src="/upload/images/contact.jpg" width="100%">
-                </div>
+                 
             </div>
+			
         </section>
+		
 @endsection

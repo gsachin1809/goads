@@ -3,12 +3,14 @@
 @section('content')
     
 <div class="container">
-    <div class="text-center">
+    <div>
 
-        <div class="col-xs-6 col-md-4">
+        <div class="col-xs-6 col-md-8">
         
-            <form action="newads" method="post">
+            <form action="make_payment" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="payment_for" value="{{ $payment_for }}">
+            <input type="hidden" name="payment_amount" value="{{ $payment_amount }}">
             <span class="label label-danger">Please do not enter any cofidensial data</span>
             <div class="panel panel-default credit-card-box">
                 <div class="panel-heading display-table" >
@@ -21,6 +23,29 @@
                 </div>
                 <div class="panel-body">
                     <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">Payment For :-</label>
+                                        <Label> 
+                                            {{ $payment_for }}
+                                        </Label>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">Payment Amount :-</label>
+                                    
+                                        <label>
+                                            {{ $payment_amount }}
+                                        </label> 
+                                            
+                                    
+                                </div>                            
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="form-group">

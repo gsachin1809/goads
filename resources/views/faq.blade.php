@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container ">
-    <div class="panel-group" id="faqAccordion">
+
+    <div class="container">
+	<div >
+      <img src="/upload/images/faq.jpg" width="100%">
+    </div>
+<br>
+    <div class="panel-group" id="faqAccordion"style="width:70%;float:left">
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
                  <h4 class="panel-title">
@@ -82,8 +87,9 @@
         
     </div>
     <!--/panel-group-->
-    <div class="col-sm-12">
-      <img src="/upload/images/faq.jpg" width="100%">
-    </div>
+   <div style="height:350px;width:25%;background-color: lightgrey;margin-top:1.5;float:right"></>
+<center><h3 style="background-color: red">Scorll Ads</h3></center>
 </div>
+</div>
+
 @endsection

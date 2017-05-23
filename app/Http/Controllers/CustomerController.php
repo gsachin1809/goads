@@ -104,8 +104,86 @@ class CustomerController extends Controller
         return view('customer.newads');
     }
 
+    public function package()
+    {
+        return view('customer.package');
+    }
+    public function make_payment(Request $request)
+    {
+        
+        
+         if($request->payment_for == "registration")
+            {
+                echo "hell";
+                echo $request->payment_for ;
+        
+                return view('customer.package');
+
+            }
+            else if($request->payment_for == "package")
+            {
+                return redirect("/index");
+            }
+            else
+                return redirect("/index");
+       
+    }
 
 
+
+    public function payment(Request $request)
+    {
+
+        
+            if($request->payment_for == "registration")
+            {
+                return view('customer.payumoney')->with([
+                                                    'payment_amount' => "500",
+                                                    'payment_for' => "registration"
+                                                 ]);
+
+            }
+            else if($request->payment_for == "package")
+            {
+                if($request->package == "free")
+                    return redirect('/index');
+
+                switch ($request->package) {
+                    case 'silver':
+                        $amount = "12";
+                    break;
+                    case 'gold':
+                        $amount = "24";
+                    break;
+                    case 'platinum':
+                        $amount = "36";
+                    break;
+                    case 'diamond':
+                        $amount = "60";
+                    break;
+                    case 'royal':
+                        $amount = "120";
+                    break;
+                   
+                   default:
+                       return redirect('/index');
+                   break;
+                    }
+               
+                return view('customer.payumoney')->with([
+                                                    'payment_amount' => "$amount GBP",
+                                                    'payment_for' => "$request->package package"
+                                                 ]);
+
+
+        
+            }
+            else
+                return redirect('/index');
+
+        
+
+    }
 
 
     /**

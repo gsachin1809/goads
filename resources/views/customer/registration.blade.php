@@ -32,7 +32,7 @@
 						</p>
 					</div>		
 					
-					<button type="submit" class="btn btn-lg btn-info">I agreeed</button>					
+					<button type="submit" class="btn btn-lg btn-info">I agreed</button>					
 					</div>
 				</form> 
 			</div>
@@ -137,26 +137,23 @@
 							<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
 						</div>		
 						<div class="form-group">
-							<label>Certificate of incorporation</label>
-							<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
-						</div>		
-						<div class="form-group">
-							<label>MOA</label>
-							<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
-						</div>		
-						<div class="form-group">
-							<label>AOA</label>
-							<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
-						</div>		
+							<div class="radio">
+								<label>Select Doc to upload</label>
+								<div class="radio">
+								  <label><input type="radio" name="optradio" selected>Certificate of incorporation</label>
+								  <label><input type="radio" name="optradio">MOA</label>
+								  <label><input type="radio" name="optradio">AOA</label>
+								  <label><input type="radio" name="optradio">Partnership Deed</label>
+								</div>
+								
+								
+								
+								
 
-						<div class="form-group">
-							<label>Partnership Deed</label>
-							<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
+								<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
+								</div>
 						</div>		
-						<div class="form-group">
-							<label>DL Card</label>
-							<input type="file" placeholder="Enter Phone Number Here.." class="form-control">
-						</div>		
+							
 						<div class="form-group">
 							<label>Agreement</label>
 							<p>
@@ -164,7 +161,7 @@
 							</p>
 						</div>		
 					
-					<button type="submit" class="btn btn-lg btn-info" >I agreeed</button>					
+						<button type="submit" class="btn btn-lg btn-info" >I agreed</button>					
 					</div>
 				</form> 
 				</div>

@@ -22,8 +22,11 @@ Route::post('/myprofile/update','CustomerController@store');
 
 Route::get('/createads','CustomerController@createads');
 Route::post('/createads/registration','CustomerController@adsregistration');
-Route::post('/createads/payumoney','CustomerController@payumoney');
 Route::post('/createads/newads','CustomerController@newads');
+Route::post('/createads/payment','CustomerController@payment');
+Route::post('/createads/make_payment','CustomerController@make_payment');
+Route::post('/createads/package','CustomerController@package');
+Route::post('/createads/package-payment','CustomerController@package_payment');
 
 Route::get('/chat', 'CustomerController@chat')->name('customer/chat');
 
