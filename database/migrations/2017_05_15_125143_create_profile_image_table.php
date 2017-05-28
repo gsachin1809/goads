@@ -19,7 +19,7 @@ class CreateProfileImageTable extends Migration
             $table->string('email')->unique();
             $table->string('photo')->nullable();
             $table->timestamps();
-            $table->softDeletes();;
+            $table->softDeletes();
             // $table->date('deleted_at');
         });
     }

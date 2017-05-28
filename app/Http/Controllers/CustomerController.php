@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use App\Models\Profile;
 use App\Models\ProfileImageModel;
+use App\Models\AboutUser;
+use App\Models\Ads;
 
 
 class CustomerController extends Controller
@@ -18,6 +20,13 @@ class CustomerController extends Controller
      * @return \Illuminate\Http\Response
      */
     // $useremail =  Auth::user()->email;
+    
+    public function index()
+    {
+        return view('customer.chat');
+    }
+
+
     public function myprofile()
     {
         
@@ -29,7 +38,7 @@ class CustomerController extends Controller
             if(count($profile))
             {
                 
-                return view('customer.myprofile')->with('profile', $profile)->with('profileimage', $profileimage);
+                  return view('customer.myprofile')->with('profile', $profile)->with('profileimage', $profileimage);
             }
             return view('customer.myprofile');
         }
@@ -49,11 +58,10 @@ class CustomerController extends Controller
     public function uploadimage(Request $request)
     {   
         
-        echo "hello";
-        
         $useremail =  Auth::user()->email;
         $profileimage = $request->file('profileimage');
-        $filename = $useremail.'.jpg';
+
+        $filename = date("dmyhms").'.jpg';
         
         echo "line 58";
         echo $profileimage;
@@ -111,14 +119,11 @@ class CustomerController extends Controller
     public function make_payment(Request $request)
     {
         
-        
          if($request->payment_for == "registration")
             {
-                echo "hell";
-                echo $request->payment_for ;
-        
-                return view('customer.package');
+                $ads = Ads::display($request->ads_id);
 
+                return view('customer.package')->with('ads',$ads);
             }
             else if($request->payment_for == "package")
             {
@@ -137,14 +142,21 @@ class CustomerController extends Controller
         
             if($request->payment_for == "registration")
             {
+                $ads_id = Ads::store($request);
+                $result = AboutUser::store($request, $ads_id);
+                
                 return view('customer.payumoney')->with([
                                                     'payment_amount' => "500",
-                                                    'payment_for' => "registration"
+                                                    'payment_for' => "registration",
+                                                    'ads_id' => $ads_id
                                                  ]);
 
             }
             else if($request->payment_for == "package")
             {
+                
+                $result = Ads::package($request);
+
                 if($request->package == "free")
                     return redirect('/index');
 
@@ -224,9 +236,10 @@ class CustomerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function myads()
     {
-        //
+        $ads = Ads::userads();
+        return view('customer.myads')->with('ads',$ads);
     }
 
     /**

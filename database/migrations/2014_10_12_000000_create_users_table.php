@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->boolean('is_active')->nullable()->default('1');
+            $table->enum('is_active'['customer','admin'])->default('customer');
         });
     }
 

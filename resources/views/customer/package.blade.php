@@ -8,11 +8,17 @@
             <form action="payment" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="hidden" name="payment_for" value="package">
+            <input type="hidden" name="ads" value="{{ $ads->ads_id }}">
             <span class="label label-danger">Please do not enter any cofidensial data</span>
             <div class="panel panel-default credit-card-box">
                 <div class="panel-heading display-table" >
                     <div class="row display-tr text-center" >
                         <h3 class="panel-title display-td" >Package Details</h3>
+                    </div>                    
+                </div>
+                <div class="panel-heading display-table" >
+                    <div class="row display-tr text-center" >
+                        <h3 class="panel-title display-td" >Product Name :- {{ $ads->product_name or ''}}</h3>
                     </div>                    
                 </div>
                 <div class="panel-body">

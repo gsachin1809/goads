@@ -13,7 +13,10 @@
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/hello','CustomerController@index');
+Route::get('/','HomepagesController@index');
+
+
+Route::get('/index','CustomerController@index');
 
 Route::get('/myprofile','CustomerController@myprofile');
 Route::get('/myprofile/update','CustomerController@update');
@@ -28,24 +31,16 @@ Route::post('/createads/make_payment','CustomerController@make_payment');
 Route::post('/createads/package','CustomerController@package');
 Route::post('/createads/package-payment','CustomerController@package_payment');
 
-Route::get('/chat', 'CustomerController@chat')->name('customer/chat');
+Route::get('/chat','CustomerController@chat')->name('customer/chat');
 
 
-Route::get('/myads', function () {
-    return view('customer.myads');
-});
+Route::get('/myads','CustomerController@myads');
 
 Route::get('/wallet', function () {
     return view('customer.wallet');
 });
 
-Route::get('/index', function () {
-    return view('customer.index');
-});
 
-Route::get('/', function () {
-    return view('index');
-});
 Route::get('/traffic', function () {
     return view('traffic');
 });

@@ -188,11 +188,11 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="myprofile">Profile</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/myprofile">Profile</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ route('customer/chat') }}">Chat</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="wallet">wallet</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="myads">My ads</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="createads">Create ads</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/wallet">wallet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/myads">My ads</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/createads">Create ads</a></li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

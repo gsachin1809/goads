@@ -11,6 +11,7 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="hidden" name="payment_for" value="{{ $payment_for }}">
             <input type="hidden" name="payment_amount" value="{{ $payment_amount }}">
+            <input type="hidden" name="ads_id" value="{{ $ads_id or null }}">
             <span class="label label-danger">Please do not enter any cofidensial data</span>
             <div class="panel panel-default credit-card-box">
                 <div class="panel-heading display-table" >
