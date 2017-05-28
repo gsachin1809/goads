@@ -11,7 +11,7 @@ class AboutUser extends Model
 	use SoftDeletes;
 
 	protected $table = 'about_users';
-
+// this is for example
     protected $dates = ['deleted_at'];
     public $timestamps = false;
 

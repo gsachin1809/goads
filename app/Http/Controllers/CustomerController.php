@@ -71,7 +71,7 @@ class CustomerController extends Controller
         else
             echo " <br>file get failed";
 
-        if(Image::make($profileimage->getRealPath())->save('upload\profileimage\\'.$filename))
+        if(Image::make($profileimage->getRealPath())->save(public_path('upload\profileimage\\'.$filename)))
             echo " <br>upload successfull";
         else
             echo " <br> file get failed";
