@@ -12,5 +12,5 @@ class ProfileImageModel extends Model
 	protected $table = 'profile_image';
 
     protected $dates = ['deleted_at'];
-    public $timestamps = true;
+    // public $timestamps = true;
 }

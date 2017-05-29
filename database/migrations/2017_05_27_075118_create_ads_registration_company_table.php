@@ -28,10 +28,14 @@ class CreateAdsRegistrationCompanyTable extends Migration
             $table->enum('gender',['m','f'])->default('m');
             $table->date('person_dob')->nullable();
             $table->string('person_contact')->nullable();
+            $table->string('business_address')->nullable();
+            $table->string('perment_address')->nullable();
             $table->string('alter_number')->nullable();
             $table->string('marital_status')->nullable();
             $table->string('citizanship')->nullable();
             $table->string('pan_number')->nullable();
+            $table->string('pan_number_file')->nullable();
+            $table->string('photo')->nullable();
             $table->string('doc_type')->nullable();
             $table->string('file_name')->nullable();
            

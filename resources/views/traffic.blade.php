@@ -154,7 +154,7 @@ border-color: #23A4F2;
                       <li class="list-group-item">4 X 4 Inches Ad Box</li>
                       <li class="list-group-item">12 GBP per Month</li>
                       <li class="list-group-item">For Year package 120 GBP</li>
-                      <li class="list-group-item">5000 Clicks Per Month</li>
+                      <li class="list-group-item">2000 Clicks Per Month</li>
                       <li class="list-group-item">10000 Promotional Mails Per Month</li>
                       <hr>
                        <li class="list-group-item">5 to 10 Seconds Brand Promotionl Ads in our other sites like Meet, Chats etc.</li>
@@ -184,7 +184,8 @@ border-color: #23A4F2;
                   <ul class="list-group">
                       <li class="list-group-item">4 X 4 Inches Ad Box</li>
                       <li class="list-group-item">24 GBP Per Month</li>
-                      <li class="list-group-item">2000 Clicks Per Month</li>
+                      <li class="list-group-item">240 GBP Per Year</li>
+                      <li class="list-group-item">5000 Clicks Per Month</li>
                       <li class="list-group-item">20000 Promotional Mails Per Month</li>
                       <hr>
                       <li class="list-group-item"> 2 times 5 to 10 Seconds Brand Promotionl Ads in our other sites like Meet, Chat etc. </li>

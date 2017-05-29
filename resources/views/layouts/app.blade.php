@@ -176,7 +176,7 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li><a href="/">Home</a></li>
-						<li><a href="aboutus">About Us</a></li>
+                            <li><a href="aboutus">About Us</a></li>
                             <li><a href="traffic">Tariffs</a></li>
                             <li><a href="faq">FAQ</a></li>
                             <li><a href="contact-us">Contact Us</a></li>
@@ -189,11 +189,11 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/myprofile">Profile</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ route('customer/chat') }}">Chat</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/wallet">wallet</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/myads">My ads</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/createads">Create ads</a></li>
-                                    <li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ route('customer/chat') }}">Chat</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="{{ route('customer/chat') }}">Meet</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/wallet">wallet</a></li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

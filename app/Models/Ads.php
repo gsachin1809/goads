@@ -15,7 +15,7 @@ class Ads extends Model
 	protected $table = 'ads';
 
     protected $dates = ['deleted_at'];
-    public $timestamps = false;
+    // public $timestamps = false;
 
     public static function store($request)
     {

@@ -13,21 +13,20 @@ class Adsregistrationforindividual extends Model
 	protected $table = 'ads_registration_individual';
 
     protected $dates = ['deleted_at'];
-    public $timestamps = false;
-
+    
     public static function store($request)
     {
-
+         
+    	$ads_individual = new Adsregistrationforindividual;
+    	$ads_individual->user_email =  Auth::user()->email;
+    	$ads_individual->pan_number = $request->pan_number;
+    	$ads_individual->pan_number_file = $request->pan_number_file;
+        $ads_individual->adhar_card = $request->adhar_card;
+    	$ads_individual->adhar_card_file = $request->adhar_card_file;
+        $ads_individual->dl_number = $request->dl_number;
+        $ads_individual->dl_number_file = $request->dl_number_file;
     	
-    	$about_user = new AboutUser;
-    	$about_user->user_email =  Auth::user()->email;
-    	$about_user->ads_id = $ads_id;
-    	$about_user->mission = $request->mission;
-    	$about_user->vission = $request->vission;
-    	$about_user->about_me = $request->about_me;
-    	$about_user->contact_name = $request->contact_person;
-    	$about_user->contact_number = $request->contact_number;
-    	$about_user->save();
+    	$ads_individual->save();
 
     	
     }

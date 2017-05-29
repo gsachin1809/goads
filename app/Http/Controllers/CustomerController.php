@@ -10,6 +10,8 @@ use App\Models\Profile;
 use App\Models\ProfileImageModel;
 use App\Models\AboutUser;
 use App\Models\Ads;
+use App\Models\Adsregistrationforindividual;
+use App\Models\Adsregistrationforcompany;
 
 
 class CustomerController extends Controller
@@ -71,7 +73,7 @@ class CustomerController extends Controller
         else
             echo " <br>file get failed";
 
-        if(Image::make($profileimage->getRealPath())->save(public_path('upload\profileimage\\'.$filename)))
+        if(Image::make($profileimage->getRealPath())->save(public_path('upload\profileimage\\').$filename))
             echo " <br>upload successfull";
         else
             echo " <br> file get failed";
@@ -107,8 +109,16 @@ class CustomerController extends Controller
         
     }
 
-    public function newads()
+    public function newads(Request $request)
     {
+        
+        if($request->typeofads == "individual")
+            $result = Adsregistrationforindividual::store($request);
+
+        if($request->typeofads == "company")
+            $result = Adsregistrationforcompany::store($request);
+
+
         return view('customer.newads');
     }
 
