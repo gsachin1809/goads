@@ -20,9 +20,12 @@ class Ads extends Model
     public static function store($request)
     {
 
-    	$filename = date("dmyhms").".jpg";
     	$adsimage = $request->file('adsimage');
-    	Image::make($adsimage->getRealPath())->save('upload\ads\\'.$filename);
+        $filename = date("dmyhms").'.jpg';
+        $location = 'upload/ads/'.$filename;
+        Image::make($adsimage->getRealPath())->save($location);
+
+    	//Image::make($adsimage->getRealPath())->save('upload\ads\\'.$filename);
     	
     	$ads = new Ads;
 
@@ -47,6 +50,21 @@ class Ads extends Model
     		return $ads;
     	else
     		return false;
+    }
+
+    public static function showads($ads_id)
+    {
+
+        $adsdetails = DB::table('ads')
+            ->join('about_users', 'ads.ads_id', '=', 'about_users.ads_id')
+            ->where('ads.ads_id','=',$ads_id)
+            ->select('ads.*', 'about_users.*')
+            ->first();
+
+        if(count($adsdetails))
+            return $adsdetails;
+        else
+            return false;
     }
 
     public static function package($request)

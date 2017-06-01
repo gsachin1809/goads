@@ -14,7 +14,7 @@
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/','HomepagesController@index');
-
+Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');
 
 Route::get('/index','CustomerController@index');
 
@@ -32,6 +32,7 @@ Route::post('/createads/package','CustomerController@package');
 Route::post('/createads/package-payment','CustomerController@package_payment');
 
 Route::get('/chat','CustomerController@chat')->name('customer/chat');
+Route::get('/ads/view/{id}','CustomerController@showads');
 
 
 Route::get('/myads','CustomerController@myads');
@@ -53,6 +54,9 @@ Route::get('/faq', function () {
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
+Route::get('/privacy', function () {
+    return view('privacy');
+});
 
 Route::group(['prefix' => 'artisan'], function(){
 
@@ -65,5 +69,7 @@ Route::group(['prefix' => 'artisan'], function(){
 });
 
 
+
+Route::get('/test','TestController@index');
 Auth::routes();
 

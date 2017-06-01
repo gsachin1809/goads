@@ -32,7 +32,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="contact_person">Contact Person Name</label>  
         <div class="col-md-6">
-        <input id="contact_person" name="contact_person" type="text" placeholder="Contact Person Name" class="form-control input-md" required>
+        <input id="contact_person" name="contact_person" type="text" placeholder="Contact Person Name" class="form-control input-md" >
           
         </div>
       </div>
@@ -41,7 +41,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="contact_number">Contact Number</label>  
         <div class="col-md-6">
-        <input id="contact_number" name="contact_number" type="text" placeholder="Contact Person number" class="form-control input-md" required>
+        <input id="contact_number" name="contact_number" type="text" placeholder="Contact Person number" class="form-control input-md" >
           
         </div>
       </div>
@@ -51,7 +51,7 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="Product_name">Product Name</label>  
                 <div class="col-md-6">
-                <input id="product_name" name="product_name" type="text" placeholder="Product Name" class="form-control input-md" required>
+                <input id="product_name" name="product_name" type="text" placeholder="Product Name" class="form-control input-md" >
                   
                 </div>
               </div>
@@ -60,7 +60,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="description">Description</label>
                 <div class="col-md-4">                     
-                  <textarea class="form-control" id="description" name="description" placeholder="Description" required></textarea>
+                  <textarea class="form-control" id="description" name="description" placeholder="Description" ></textarea>
                 </div>
               </div>
 
@@ -68,7 +68,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="price">Price</label>  
                 <div class="col-md-6">
-                <input id="price" name="price" type="number" placeholder="Price" class="form-control input-md" required>
+                <input id="price" name="price" type="number" placeholder="Price" class="form-control input-md" >
                   
                 </div>
               </div>
@@ -76,7 +76,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="discount">Discount Offered</label>  
                 <div class="col-md-6">
-                <input id="discount" name="discount" type="number" placeholder="Discount in percentage  " class="form-control input-md" required>
+                <input id="discount" name="discount" type="number" placeholder="Discount in percentage  " class="form-control input-md" >
                   
                 </div>
               </div>
@@ -86,7 +86,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="categories">Categories</label>  
                 <div class="col-md-6">
-                <input id="categories" name="categories" type="text" placeholder="select the type of Categories" class="form-control input-md" required>
+                <input id="categories" name="categories" type="text" placeholder="select the type of Categories" class="form-control input-md" >
                   
                 </div>
               </div>
@@ -312,7 +312,7 @@
       window.onload = disablesubmit;
         function disablesubmit()
         {
-          document.getElementById("submitbutton").disabled = true;
+          document.getElementById("submitbutton").disabled = false;
           document.getElementById("submitbuttonmessage").style.color = "red";
           document.getElementById("submitbuttonmessage").innerHTML = "You have to read and accept the team and conditions";
 

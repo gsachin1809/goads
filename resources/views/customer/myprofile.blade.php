@@ -50,6 +50,10 @@
 					        	<td>Citizenship</td>
 					        	<td>{{ $profile->citizenship }}</td>
 					      	</tr>
+					      	<tr>
+					        	<td>Token points</td>
+					        	<td> 120</td>
+					      	</tr>
 					      	
 					    </tbody>
 					  </table>

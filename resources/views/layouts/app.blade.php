@@ -31,6 +31,12 @@
             color: black!important;
         }
 
+        .footer{
+          background-color: red;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: black;
+        }
 
 
 /* Floating Social Media Bar Style Starts Here */
@@ -215,7 +221,64 @@
 
         @yield('content')
     </div>
- 
+    <hr>
+    <div class="col-sm-12 footer">
+        <div class="col-sm-12 row">
+            <div class="col-sm-1">
+                <a href="/privacy" style="color: black;">Privacy</a>
+            </div>
+            <div class="col-sm-1">
+                Support
+            </div>
+            <div class="col-sm-1">
+                Careers
+            </div>
+            <div class="col-sm-1">
+                Log In 
+            </div>
+            <div class="col-sm-2">
+                Social media
+            </div>
+            <div class="col-sm-1">
+                Contact Us
+            </div>
+            <div class="col-sm-2">
+                Terms and conditions 
+            </div>
+            <div class="col-sm-1">
+                Copy Right
+            </div>
+            
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-5 pull-left">
+          <div><label>GoAds</label></div>  
+          <div><label>info@goads.co</label></div>
+          <div><label>marketing@goads.co </label></div> 
+          
+           <div class="input-group col-sm-5">
+            <input type="text" class="form-control" placeholder="sign-up for news letter...">
+            <span class="input-group-btn">
+              <button class="btn btn-success" type="button">sGo!</button>
+            </span>
+          </div>
+        </div>
+        <div  class="col-sm-3"></div>
+        <div class="col-sm-3 pull-right">
+          <div class="pull-right">
+          Copyright © 2017 Go Ads.
+          All Rights Reserved.
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>

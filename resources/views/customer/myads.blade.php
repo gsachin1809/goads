@@ -8,7 +8,7 @@
 			@foreach ($ads as $myads)
 			    <div class="col-md-4">
 			      <div class="thumbnail">
-			        <a href="/w3images/lights.jpg" target="_blank">
+			        <a href="/ads/view/{{ $myads->ads_id }}">
 			          <img src="/upload/ads/{{ $myads->image }}" alt="{{$myads->product_name }}" style="width:300px;height: 200px">
 			          <div class="caption">
 			          

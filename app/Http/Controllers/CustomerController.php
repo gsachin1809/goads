@@ -65,18 +65,16 @@ class CustomerController extends Controller
 
         $filename = date("dmyhms").'.jpg';
         
-        echo "line 58";
-        echo $profileimage;
+        
+        $location = 'upload/profileimage/'.$filename;
+        Image::make($profileimage->getRealPath())->save($location);
 
-        if($profileimage)
-            echo "<br>file get successfull";
-        else
-            echo " <br>file get failed";
 
-        if(Image::make($profileimage->getRealPath())->save(public_path('upload\profileimage\\').$filename))
-            echo " <br>upload successfull";
-        else
-            echo " <br> file get failed";
+
+        // if(Image::make($profileimage->getRealPath())->save(public_path('upload\profileimage\\'),$filename))
+        //     echo " <br>upload successfull";
+        // else
+        //     echo " <br> file get failed";
 
         $profileimage = ProfileImageModel::where('email',$useremail)->first();
         $profileimage->photo = $filename;
@@ -133,7 +131,9 @@ class CustomerController extends Controller
             {
                 $ads = Ads::display($request->ads_id);
 
-                return view('customer.package')->with('ads',$ads);
+                
+
+                // return view('customer.package')->with('ads',$ads);
             }
             else if($request->payment_for == "package")
             {
@@ -155,10 +155,24 @@ class CustomerController extends Controller
                 $ads_id = Ads::store($request);
                 $result = AboutUser::store($request, $ads_id);
                 
+                $key = env("Merchant_Key");
+                $salt = env("Merchant_Salt");
+                $amount = '500';
+                $productinfo = "registration on goads";
+                $first_name = $request->first_name;
+                $email = $request->email;
+                $txnid = date("dmyhms");
+
+                $hashSequence = $key.'|'.$txnid.'|'.$amount.'|'.$productinfo.'|'.$first_name.'|'.$email.'|'.$salt;
+                $hash = hash("sha512",$hashSequence);
+
                 return view('customer.payumoney')->with([
                                                     'payment_amount' => "500",
                                                     'payment_for' => "registration",
-                                                    'ads_id' => $ads_id
+                                                    'ads_id' => $ads_id,
+                                                    'salt' => $salt,
+                                                    'hash' => $hash,
+                                                    'txnid' => $txnid
                                                  ]);
 
             }
@@ -250,6 +264,14 @@ class CustomerController extends Controller
     {
         $ads = Ads::userads();
         return view('customer.myads')->with('ads',$ads);
+    }
+
+    public function showads($id)
+    {
+        
+        $adsdetails = Ads::showads($id);
+        
+        return view('customer.viewads')->with('adsdetails',$adsdetails);
     }
 
     /**
